@@ -10,7 +10,7 @@ using System.Linq;
 using System.Reflection;
 using UnityEditor.Callbacks;
 
-namespace Fungus
+namespace Fungus.Lua
 {
     [CustomEditor (typeof(LuaBindings))]
     public class LuaBindingsEditor : Editor 

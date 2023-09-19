@@ -9,8 +9,9 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using MoonSharp.Interpreter;
+using Fungus.Lua.JSON;
 
-namespace Fungus
+namespace Fungus.Lua
 {
     /// <summary>
     /// Options for using the Lua FungusModule.

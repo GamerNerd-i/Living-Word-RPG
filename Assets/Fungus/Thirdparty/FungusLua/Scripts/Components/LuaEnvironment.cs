@@ -8,7 +8,7 @@ using System.Linq;
 using MoonSharp.Interpreter;
 using MoonSharp.VsCodeDebugger;
 
-namespace Fungus
+namespace Fungus.Lua
 {
     /// <summary>
     /// Wrapper for a MoonSharp Lua Script instance.
