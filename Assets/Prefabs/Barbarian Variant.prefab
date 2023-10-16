@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3541875047339253862
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 950877545552779708, guid: 7602b8d6cb0eb314482003ef012a93c7,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 950877545552779708, guid: 7602b8d6cb0eb314482003ef012a93c7,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1878587332, guid: 2974297f9e0912d46afba25b798e8a7b,
+        type: 3}
+    - target: {fileID: 1599399735502871007, guid: 7602b8d6cb0eb314482003ef012a93c7,
+        type: 3}
+      propertyPath: m_Name
+      value: Barbarian Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3996073535725581087, guid: 7602b8d6cb0eb314482003ef012a93c7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3996073535725581087, guid: 7602b8d6cb0eb314482003ef012a93c7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3996073535725581087, guid: 7602b8d6cb0eb314482003ef012a93c7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3996073535725581087, guid: 7602b8d6cb0eb314482003ef012a93c7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3996073535725581087, guid: 7602b8d6cb0eb314482003ef012a93c7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3996073535725581087, guid: 7602b8d6cb0eb314482003ef012a93c7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3996073535725581087, guid: 7602b8d6cb0eb314482003ef012a93c7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3996073535725581087, guid: 7602b8d6cb0eb314482003ef012a93c7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3996073535725581087, guid: 7602b8d6cb0eb314482003ef012a93c7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3996073535725581087, guid: 7602b8d6cb0eb314482003ef012a93c7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951735433051770698, guid: 7602b8d6cb0eb314482003ef012a93c7,
+        type: 3}
+      propertyPath: maxHP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951735433051770698, guid: 7602b8d6cb0eb314482003ef012a93c7,
+        type: 3}
+      propertyPath: unitStr
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951735433051770698, guid: 7602b8d6cb0eb314482003ef012a93c7,
+        type: 3}
+      propertyPath: unitTgh
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951735433051770698, guid: 7602b8d6cb0eb314482003ef012a93c7,
+        type: 3}
+      propertyPath: unitName
+      value: Barbarian
+      objectReference: {fileID: 0}
+    - target: {fileID: 7951735433051770698, guid: 7602b8d6cb0eb314482003ef012a93c7,
+        type: 3}
+      propertyPath: currentHP
+      value: 100
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7602b8d6cb0eb314482003ef012a93c7, type: 3}

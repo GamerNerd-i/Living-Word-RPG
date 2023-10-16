@@ -79,3 +79,5 @@ crashlytics-build.properties
 .GameStatistics
 .PlayerSettings
 
+
+.fake
