@@ -1,19 +1,26 @@
 using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
 public class BattleState
 {
-    protected BattleStateMachine battleFSM;
+    protected readonly BattleSystem _system;
 
-    public BattleState(BattleStateMachine battleFSM)
+    public BattleState(BattleSystem system)
     {
-        this.battleFSM = battleFSM;
+        _system = system;
     }
 
-    public virtual void EnterState() { }
+    public virtual IEnumerator EnterState()
+    {
+        yield break;
+    }
 
-    public virtual void ExitState() { }
+    public virtual IEnumerator ExitState()
+    {
+        yield break;
+    }
 
-    public virtual void Update() { }
+    public virtual IEnumerator Update()
+    {
+        yield break;
+    }
 }

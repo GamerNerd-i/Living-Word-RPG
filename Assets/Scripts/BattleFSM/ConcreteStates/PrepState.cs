@@ -1,24 +1,28 @@
+using System.Collections;
 using UnityEngine;
 
 public class PrepState : BattleState
 {
-    public PrepState(BattleStateMachine battleFSM)
-        : base(battleFSM) { }
+    public PrepState(BattleSystem system)
+        : base(system) { }
 
-    public override void EnterState()
+    public override IEnumerator EnterState()
     {
         base.EnterState();
         Debug.Log("Entering Preparation Phase");
+        yield break;
     }
 
-    public override void ExitState()
+    public override IEnumerator ExitState()
     {
         base.ExitState();
         Debug.Log("Exiting Preparation Phase");
+        yield break;
     }
 
-    public override void Update()
+    public override IEnumerator Update()
     {
         base.Update();
+        yield break;
     }
 }

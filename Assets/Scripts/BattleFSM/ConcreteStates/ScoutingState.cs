@@ -1,25 +1,29 @@
+using System.Collections;
 using UnityEngine;
 
 public class ScoutingState : BattleState
 {
-    public ScoutingState(BattleStateMachine battleFSM)
-        : base(battleFSM) { }
+    public ScoutingState(BattleSystem system)
+        : base(system) { }
 
-    public override void EnterState()
+    public override IEnumerator EnterState()
     {
         base.EnterState();
 
         Debug.Log("Entering Scouting Mode");
+        yield break;
     }
 
-    public override void ExitState()
+    public override IEnumerator ExitState()
     {
         base.ExitState();
         Debug.Log("Exiting Scouting Mode");
+        yield break;
     }
 
-    public override void Update()
+    public override IEnumerator Update()
     {
         base.Update();
+        yield break;
     }
 }
