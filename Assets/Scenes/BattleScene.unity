@@ -2997,6 +2997,12 @@ GameObject:
   - component: {fileID: 1100874059}
   - component: {fileID: 1100874062}
   - component: {fileID: 1100874061}
+  - component: {fileID: 1100874068}
+  - component: {fileID: 1100874067}
+  - component: {fileID: 1100874066}
+  - component: {fileID: 1100874065}
+  - component: {fileID: 1100874064}
+  - component: {fileID: 1100874063}
   m_Layer: 0
   m_Name: BattleFlow
   m_TagString: Untagged
@@ -3017,7 +3023,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 196, y: -37.673065}
+  scrollPos: {x: 469.125, y: 39.327393}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -3028,10 +3034,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1100874060}
-  selectedCommands:
-  - {fileID: 1100874059}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 1100874024}
   description: 
@@ -3083,8 +3087,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 291.7217
-    y: 234.43303
+    x: 244.72171
+    y: 157.43304
     width: 111
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -3094,6 +3098,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 1100874063}
   - {fileID: 1100874036}
   - {fileID: 1100874057}
   - {fileID: 1100874027}
@@ -3128,8 +3133,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 9
-    y: 91
+    x: -367
+    y: 161
     width: 134
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -3188,8 +3193,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 284.5
-    y: 107
+    x: 234.5
+    y: 29
     width: 129
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -3199,6 +3204,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 1100874064}
   - {fileID: 1100874051}
   - {fileID: 1100874050}
   - {fileID: 1100874026}
@@ -3240,7 +3246,7 @@ MonoBehaviour:
   indentLevel: 0
   text: Scout
   description: 
-  targetBlock: {fileID: 1100874028}
+  targetBlock: {fileID: 1100874060}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -3263,8 +3269,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 164.5
-    y: 408
+    x: 129.5
+    y: 393
     width: 100
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -3310,8 +3316,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 13.5
-    y: 229
+    x: -124.5
+    y: 159
     width: 134
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -3366,7 +3372,7 @@ MonoBehaviour:
   indentLevel: 0
   text: Scout Battlefield
   description: 
-  targetBlock: {fileID: 1100874028}
+  targetBlock: {fileID: 1100874060}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -4044,7 +4050,7 @@ MonoBehaviour:
   indentLevel: 1
   text: Back to Planning
   description: 
-  targetBlock: {fileID: 1100874032}
+  targetBlock: {fileID: 1100874067}
   hideIfVisited: 0
   interactable:
     booleanRef: {fileID: 0}
@@ -4092,8 +4098,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 222.941
-    y: 540.3452
+    x: 245.94098
+    y: 608.3452
     width: 99
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -4170,8 +4176,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 93.04436
-    y: 540.3461
+    x: 14.044357
+    y: 603.3461
     width: 101
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -4223,8 +4229,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 356.25
-    y: 367.5
+    x: 640.25
+    y: 486.5
     width: 147
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -4249,8 +4255,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -173.75
-    y: 230.5
+    x: 607.25
+    y: 588.5
     width: 152
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -4275,8 +4281,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 317.25
-    y: 299.5
+    x: 614.25
+    y: 373.5
     width: 109
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -4536,13 +4542,13 @@ MonoBehaviour:
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: BattleSystem
   targetMethod: SetBattleState
-  targetMethodText: 'SetBattleState (BattleState): Void'
+  targetMethodText: 'SetBattleState (State): Void'
   methodParameters:
   - objValue:
-      typeAssemblyname: BattleState, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      typeAssemblyname: State, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
-      typeFullname: BattleState
-      intValue: 0
+      typeFullname: State
+      intValue: 3
       boolValue: 0
       floatValue: 0
       stringValue: 
@@ -4574,18 +4580,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 73
-    y: 317.67307
-    width: 139
+    x: 7
+    y: 285.67307
+    width: 115
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 42
-  blockName: ScoutTransition
+  blockName: ToScouting
   description: 
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1100874059}
+  - {fileID: 1100874068}
   suppressAllAutoSelections: 0
 --- !u!114 &1100874061
 MonoBehaviour:
@@ -4601,14 +4608,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 443
-    y: 168.67307
-    width: 88
+    x: 587
+    y: 180.67307
+    width: 123
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 45
-  blockName: Defeat
+  blockName: DefeatPhase
   description: 
   eventHandler: {fileID: 0}
   commandList: []
@@ -4627,18 +4634,223 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 439
-    y: 126.673065
-    width: 90
+    x: 499
+    y: 120.673065
+    width: 125
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 44
-  blockName: Victory
+  blockName: VictoryPhase
   description: 
   eventHandler: {fileID: 0}
   commandList: []
   suppressAllAutoSelections: 0
+--- !u!114 &1100874063
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100874017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 55
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 112788095}
+  targetComponentAssemblyName: BattleSystem, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: BattleSystem
+  targetMethod: SetBattleState
+  targetMethodText: 'SetBattleState (State): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: State, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      typeFullname: State
+      intValue: 2
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1100874064
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100874017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 54
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 112788095}
+  targetComponentAssemblyName: BattleSystem, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: BattleSystem
+  targetMethod: SetBattleState
+  targetMethodText: 'SetBattleState (State): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: State, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      typeFullname: State
+      intValue: 0
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1100874065
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100874017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 50
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 1100874032}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &1100874066
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100874017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 49
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 112788095}
+  targetComponentAssemblyName: BattleSystem, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: BattleSystem
+  targetMethod: SetBattleState
+  targetMethodText: 'SetBattleState (State): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: State, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      typeFullname: State
+      intValue: 1
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &1100874067
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100874017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: -115
+    y: 395.67307
+    width: 114
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 56
+  blockName: ToPlanning
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1100874066}
+  - {fileID: 1100874065}
+  suppressAllAutoSelections: 0
+--- !u!114 &1100874068
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100874017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 47
+  indentLevel: 0
+  targetFlowchart: {fileID: 0}
+  targetBlock: {fileID: 1100874028}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!1 &1216322810
 GameObject:
   m_ObjectHideFlags: 0

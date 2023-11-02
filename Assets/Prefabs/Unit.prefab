@@ -45,12 +45,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb326b588e4f73c479ee7b710731145c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitName: Wizard
+  unitName: 
   unitLevel: 0
   maxHP: 0
   currentHP: 0
-  unitStr: 0
-  unitTgh: 0
+  willpower: 0
+  strength: 0
+  knowledge: 0
+  resilience: 0
+  dexterity: 0
 --- !u!1 &1921076536123988847
 GameObject:
   m_ObjectHideFlags: 0
