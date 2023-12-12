@@ -8,17 +8,27 @@ public class PlanningState : BattleState
 
     public override IEnumerator EnterState()
     {
-        base.EnterState();
-
         Debug.Log("Entering Planning Phase");
-        yield break;
+
+        yield return new WaitForSeconds(1f);
+
+        if (true) // Scouting mode
+        {
+            Debug.Log("Initializing Scouting State");
+            _system.SetBattleState(new ScoutingState(_system));
+        }
+
+        if (true) // Combat Begin
+        {
+            Debug.Log("Initializing Prep State");
+            ExitState();
+        }
     }
 
     public override IEnumerator ExitState()
     {
-        base.ExitState();
-
         Debug.Log("Exiting Planning Phase");
+        _system.SetBattleState(new PrepState(_system));
         yield break;
     }
 

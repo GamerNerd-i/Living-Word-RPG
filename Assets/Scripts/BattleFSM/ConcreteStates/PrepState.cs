@@ -10,13 +10,23 @@ public class PrepState : BattleState
     {
         base.EnterState();
         Debug.Log("Entering Preparation Phase");
-        yield break;
+
+        //Turn Actions
+
+        //Scouting Mode
+
+        //Combat Phase
+        if (true)
+        {
+            ExitState();
+            yield break;
+        }
     }
 
     public override IEnumerator ExitState()
     {
-        base.ExitState();
         Debug.Log("Exiting Preparation Phase");
+        _system.SetBattleState(new CombatState(_system));
         yield break;
     }
 
