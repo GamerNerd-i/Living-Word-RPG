@@ -5,6 +5,7 @@ namespace StatEnum
         Willpower,
         Strength,
         Knowledge,
+        Toughness,
         Resilience,
         Dexterity,
         Favor

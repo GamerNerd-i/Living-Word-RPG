@@ -6,27 +6,54 @@ using UnityEngine;
 public class Unit : MonoBehaviour
 {
     public string unitName;
-    public int unitLevel;
 
+    readonly StatBlock statBlock;
     public int maxHP;
     public int currentHP;
+    public bool downed;
 
-    // [SerializeField]
-    // private Dictionary<string, (int, decimal)> statBlock = new Dictionary<
-    //     string,
-    //     (int value, decimal growth)
-    // >(6)
-    // {
-    //     { "Willpower", (0, 0) },
-    //     { "Strength", (0, 0) },
-    //     { "Knowledge", (0, 0) },
-    //     { "Resilience", (0, 0) },
-    //     { "Dexterity", (0, 0) },
-    //     { "Favor", (0, 0) },
-    // };
-    public int willpower,
-        strength,
-        knowledge,
-        resilience,
-        dexterity;
+    public Unit(string name, StatBlock statBlock)
+    {
+        unitName = name;
+        this.statBlock = statBlock;
+        maxHP = (int)(statBlock.stats[Stat.Willpower].Value * 3);
+        currentHP = maxHP;
+        downed = false;
+    }
+
+    public bool TakeDamage(int damage)
+    {
+        currentHP -= damage;
+
+        if (currentHP <= 0)
+        {
+            downed = true;
+            currentHP = 0;
+        }
+
+        return downed;
+    }
+
+    public void BeHealed(int healing, Unit source = null)
+    {
+        int prevHP = currentHP;
+        int nextHP = healing + currentHP;
+        currentHP = nextHP >= maxHP ? maxHP : nextHP;
+
+        if (source != null)
+        {
+            source.statBlock.GainXP(currentHP - prevHP);
+        }
+    }
+
+    public void Attack(Unit target, Stat attacker, Stat defender)
+    {
+        var damage = statBlock.stats[attacker].Value;
+        var reduction = target.statBlock.stats[defender].Value;
+
+        if (TakeDamage((int)(damage - reduction)))
+        {
+            statBlock.GainXP((int)target.statBlock.stats[Stat.Willpower].Value);
+        }
+    }
 }
