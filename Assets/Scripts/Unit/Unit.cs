@@ -7,7 +7,7 @@ public class Unit : MonoBehaviour
 {
     public string unitName;
 
-    readonly StatBlock statBlock;
+    public StatBlock statBlock;
     public int maxHP;
     public int currentHP;
     public bool downed;
@@ -34,26 +34,32 @@ public class Unit : MonoBehaviour
         return downed;
     }
 
-    public void BeHealed(int healing, Unit source = null)
+    public int BeHealed(int healing, Unit source = null)
     {
         int prevHP = currentHP;
         int nextHP = healing + currentHP;
         currentHP = nextHP >= maxHP ? maxHP : nextHP;
+        int amtHealed = currentHP - prevHP;
 
         if (source != null)
         {
-            source.statBlock.GainXP(currentHP - prevHP);
+            source.statBlock.GainXP(amtHealed);
         }
+
+        return amtHealed;
     }
 
-    public void Attack(Unit target, Stat attacker, Stat defender)
+    public int Attack(Unit target, Stat attacker, Stat defender)
     {
         var damage = statBlock.stats[attacker].Value;
         var reduction = target.statBlock.stats[defender].Value;
+        var damageDealt = (int)(damage - reduction);
 
-        if (TakeDamage((int)(damage - reduction)))
+        if (TakeDamage(damageDealt))
         {
             statBlock.GainXP((int)target.statBlock.stats[Stat.Willpower].Value);
         }
+
+        return damageDealt;
     }
 }
