@@ -62,4 +62,9 @@ public class Unit : MonoBehaviour
 
         return damageDealt;
     }
+
+    public void LevelUp()
+    {
+        statBlock.LevelUp();
+    }
 }

@@ -15,8 +15,8 @@ public class StatBlock : ISerializationCallbackReceiver
     public Dictionary<Stat, CharacterStat> growths = new Dictionary<Stat, CharacterStat>();
 
     //Instance vars for serialization
-    private int defaultStat = 1;
-    private float defaultGrowth = 0.5f;
+    private int defaultStatLimit = 5;
+    private float defaultGrowthLimit = 1f;
 
     public List<Stat> _keys = new List<Stat>();
     public List<CharacterStat> _statValues = new List<CharacterStat>();
@@ -24,6 +24,8 @@ public class StatBlock : ISerializationCallbackReceiver
 
     public StatBlock()
     {
+        var random = new System.Random();
+
         _keys.Add(Stat.Willpower);
         _keys.Add(Stat.Strength);
         _keys.Add(Stat.Knowledge);
@@ -34,8 +36,13 @@ public class StatBlock : ISerializationCallbackReceiver
 
         foreach (var stat in _keys)
         {
-            stats.Add(stat, new CharacterStat(defaultStat));
-            growths.Add(stat, new CharacterStat(defaultGrowth));
+            stats.Add(stat, new CharacterStat((int)(random.NextDouble() * defaultStatLimit)));
+            Debug.Log(stat + ": " + stats[stat].Value.ToString());
+            growths.Add(
+                stat,
+                new CharacterStat((float)Math.Round(random.NextDouble() * defaultGrowthLimit, 1))
+            );
+            Debug.Log(stat + ": " + growths[stat].Value.ToString());
         }
     }
 
@@ -120,8 +127,10 @@ public class StatBlock : ISerializationCallbackReceiver
     {
         foreach (Stat stat in _keys)
         {
+            // Debug.Log(stat + "Index: " + (int)stat);
+            // Debug.Log(_statValues[(int)stat].Value);
             stats[stat] = _statValues[(int)stat];
-            growths[stat] = _statValues[(int)stat];
+            growths[stat] = _growthValues[(int)stat];
         }
     }
 }
