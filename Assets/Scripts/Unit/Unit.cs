@@ -16,7 +16,8 @@ public class Unit : MonoBehaviour
     {
         unitName = name;
         this.statBlock = statBlock;
-        maxHP = (int)(statBlock.stats[Stat.Willpower].Value * 3);
+        Debug.Log(this.statBlock.stats[Stat.Willpower].Value);
+        maxHP = (int)(this.statBlock.stats[Stat.Willpower].Value * 3);
         currentHP = maxHP;
         downed = false;
     }
